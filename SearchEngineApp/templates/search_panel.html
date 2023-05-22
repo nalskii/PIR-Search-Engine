@@ -9,13 +9,36 @@
 {% extends 'base.html' %}
  
 {% block container %}
-
 <div class="top-pad">
   <div id="content">
     <form method="get" action="{{ url_for('query') }}">
-      <h1><label for="query">Please enter query:</label> </h1>
-        <input type="text" name="query" placeholder="Crista Lopes"/><br />
-        <h2><input type="submit" /> </h2>
+      <h1><label for="query">
+        <table>
+          <td><h1 style="font-size: 80px;color:red">S</h1></td>
+          <td><h1 style="font-size: 80px;color:blue">e</h1></td>
+          <td><h1 style="font-size: 80px;color:yellow">a</h1></td>
+          <td><h1 style="font-size: 80px;color:green">r</h1></td>
+          <td><h1 style="font-size: 80px;color:red">c</h1></td>
+          <td><h1 style="font-size: 80px;color:blue">h</h1></td>
+        </table>
+      </label> </h1>
+      <div id="search-container" style="justify-content: center;border: bold black 12px;">
+      <input id="search-input" type="text" name="query" placeholder="Cari..."/>
+      <button style="height: 39px;width:39px; 
+          top: 0;
+          right: 0;
+          padding: 6px 10px;
+          background-color: #ccc;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;" ><i  class="fas fa-search"></i></button>
+      </div>
+      <br />
+      <button type="submit" style="margin-top:2vh;">
+        <div id="buttonvalue" style="display: flex;padding: auto;">
+        <span style="color: Red;">S</span><span style="color: blue;">e</span><span style="color: yellow;">a</span><span style="color: green;">r</span><span style="color: red;">c</span><span style="color: blue;">h</span>
+        </div>
+      </button>
     </form>
 
 </div>
